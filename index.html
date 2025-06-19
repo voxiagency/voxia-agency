@@ -87,6 +87,45 @@
     .ventajas { background-color: var(--blanco); }
     .equipo { background-color: var(--gris-medio); }
     .contacto { background-color: var(--gris-claro); }
+    .segmentos {
+  background-color: var(--gris-claro);
+  padding: 3rem 1.5rem;
+}
+
+.segmentos h2 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.segmentos .grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.segmentos .item {
+  text-align: center;
+}
+
+.segmentos .item img {
+  max-width: 120px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.segmentos .btn-cta {
+  margin-top: 1rem;
+  display: inline-block;
+}
+  
+@media(min-width: 768px) {
+  .segmentos .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
     h2 {
       font-size: 1.9rem;
@@ -247,6 +286,24 @@
       </div>
     </div>
   </section>
+
+  <section class="segmentos">
+  <div class="container">
+    <h2>Especialistas en resultados para tu rubro</h2>
+    <div class="grid">
+      <div class="item">
+        <img src="img/clinicas_icono.jpg" alt="Clínicas">
+        <p>Clínicas y consultorios</p>
+        <a href="/clinicas" class="btn-cta">Ver más</a>
+      </div>
+      <div class="item">
+        <img src="img/inmobiliarias_icono.jpg" alt="Inmobiliarias">
+        <p>Empresas inmobiliarias</p>
+        <a href="#" class="btn-cta">Próximamente</a>
+      </div>
+    </div>
+  </div>
+</section>
 
   <section class="contacto" id="contacto">
     <div class="container">
