@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voxia Agency | Automatiza. Conecta. Escala.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul: #233142;
+      --amarillo: #FACF39;
+      --blanco: #ffffff;
+      --gris: #354A63;
+      --negro: #111821;
+      --amarillo-suave: #fbdb6b;
+      --gris-claro: #f8f9fa;
+      --gris-medio: #eaecef;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--blanco);
+      color: var(--azul);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    header.hero {
+      background-color: var(--negro);
+      color: var(--blanco);
+      text-align: center;
+      padding: 6rem 1.5rem 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-content {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .hero-content .logo {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 2rem;
+      display: block;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn-cta {
+      display: inline-block;
+      padding: 0.9rem 2rem;
+      background-color: var(--amarillo);
+      color: var(--negro);
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn-cta:hover {
+      background-color: var(--amarillo-suave);
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+    }
+
+    .servicios {
+      background-color: var(--gris-claro);
+    }
+
+    .ventajas {
+      background-color: var(--blanco);
+    }
+
+    .equipo {
+      background-color: var(--gris-medio);
+    }
+
+    .contacto {
+      background-color: var(--gris-claro);
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .servicios .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .ventajas .grid,
+    .equipo .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .servicio h3 {
+      margin: 0.75rem 0 0.5rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .servicio p {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .grid img {
+      object-fit: cover;
+      max-height: 240px;
+    }
+
+    .item p {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .equipo .grid img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+    }
+
+    .equipo .grid figcaption {
+      text-align: center;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+      color: var(--gris);
+    }
+
+    .contacto {
+      text-align: center;
+    }
+
+    .contacto a {
+      color: var(--azul);
+      font-weight: 600;
+    }
+
+    footer {
+      background-color: var(--negro);
+      color: var(--blanco);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    @media(min-width: 768px) {
+      h1 {
+        font-size: 4rem;
+      }
+
+      .servicios .grid,
+      .ventajas .grid,
+      .equipo .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <img src="img/Logo temporal.jpg" alt="Voxia Agency Logo" class="logo">
+      <h1>Automatiza. Conecta. Escala.</h1>
+      <p>Soluciones inteligentes en Marketing 5.0, automatización y crecimiento rentable para negocios modernos.</p>
+      <a href="#contacto" class="btn-cta">Agenda una reunión</a>
+    </div>
+  </header>
+
+  <section class="servicios">
+    <div class="container">
+      <h2>¿Qué hacemos?</h2>
+      <div class="grid">
+        <div class="servicio">
+          <img src="img/Automarizacion_procesos.jpg" alt="Dashboard">
+          <h3>Automatización de Procesos</h3>
+          <p>Optimiza tus flujos de trabajo comerciales con sistemas inteligentes.</p>
+        </div>
+        <div class="servicio">
+          <img src="img/CRM_IA.png" alt="CRM">
+          <h3>CRM Inteligente</h3>
+          <p>Organiza y automatiza la gestión de clientes con herramientas de vanguardia.</p>
+        </div>
+        <div class="servicio">
+          <img src="img/marketin5_0.jpg" alt="Social Media">
+          <h3>Marketing Digital 5.0</h3>
+          <p>Publicidad omnicanal en Meta, Google, LinkedIn, TikTok y WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ventajas">
+    <div class="container">
+      <h2>Tu ventaja con Voxia</h2>
+      <div class="grid">
+        <div class="item">
+          <img src="img/Growth_business.jpg" alt="Growth">
+          <p>Escalamiento rentable y controlado de tu negocio.</p>
+        </div>
+        <div class="item">
+          <img src="img/IUX_design.jpg" alt="UX Design">
+          <p>Diseños funcionales orientados a conversión.</p>
+        </div>
+        <div class="item">
+          <img src="img/Startup_workspace.jpg" alt="Workspace">
+          <p>Implementación ágil en entornos reales de trabajo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="equipo">
+    <div class="container">
+      <h2>Confía en un equipo experto</h2>
+      <div class="grid">
+        <figure>
+          <img src="img/Meeting_agency.jpg" alt="Meeting Agency">
+          <figcaption>Reuniones estratégicas con foco en resultados</figcaption>
+        </figure>
+        <figure>
+          <img src="img/AI_team.jpg" alt="Team Work">
+          <figcaption>Expertos en IA y automatización aplicada</figcaption>
+        </figure>
+        <figure>
+          <img src="img/call_center.jpg" alt="Call Center">
+          <figcaption>Soporte humano y seguimiento comercial</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <h2>¡Conversemos!</h2>
+      <p>Agenda una reunión exploratoria para analizar tu proyecto.</p>
+      <p><strong>Email:</strong> <a href="mailto:info@voxia.agency">info@voxia.agency</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/59171405888" target="_blank">+591 71405888</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© Voxia Agency 2025 – Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
