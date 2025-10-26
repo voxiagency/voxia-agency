@@ -1,0 +1,36 @@
+[build]
+  publish = "."
+  command = ""
+
+# --- Redirecciones ---
+[[redirects]]
+  from = "/politica"
+  to = "/politica-de-privacidad.html"
+  status = 301
+
+[[redirects]]
+  from = "/cookies"
+  to = "/cookies-y-datos.html"
+  status = 301
+
+[[redirects]]
+  from = "/terminos"
+  to = "/terminos-y-condiciones.html"
+  status = 301
+
+# --- Headers de seguridad ---
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer-when-downgrade"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# --- Forzar HTTPS ---
+[[redirects]]
+  from = "http://voxia.agency/*"
+  to = "https://voxia.agency/:splat"
+  status = 301
+  force = true
